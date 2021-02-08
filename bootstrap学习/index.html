@@ -18,12 +18,12 @@
             <header class="col-md-2">
                 <div class="logo">
                     <a href="#">
-                        <img src="images/logo.png" alt="拼多多">
+                        <img id="logo" src="images/logo.png" alt="拼多多">
                     </a>
                 </div>
                 <div class="nav">
                     <ul>
-                        <li ><a href="#" class="glyphicon glyphicon-camera">生活馆</a></li>
+                        <li ><a href="javascript:toggle()" class="glyphicon glyphicon-camera">生活馆</a></li>
                         <li><a href="#" class="glyphicon glyphicon-picture">自然汇</a></li>
                         <li><a href="#" class="glyphicon glyphicon-phone">科技潮</a></li>
                         <li><a href="#" class="glyphicon glyphicon-gift">奇趣事</a></li>
@@ -35,12 +35,16 @@
                 <div class="news">
                     <ul>
                         <li> 
-                            <img src="images/3221610325923_.pic_hd.jpg" alt="">
+                            <img src="images/3221610325923_.pic_hd.jpg" alt="" width="100%">
                         </li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
+                        <li>
+                            <img src="images/3231610325924_.pic_hd.jpg" alt="" width="100%">
+                        </li>
+                        <li>
+                            <img src="images/3281610325975_.pic_hd.jpg" alt="" width="100%">
+                        </li>
+                        <li><img src="images/WeChat Image_20210208103847.jpg" alt="" width="100%"></li>
+                        <li><img src="images/WeChat Image_20210208103812.jpg" alt="" width="100%"></li>
                     </ul>
                 </div>
                 <div class="publish"></div>
@@ -48,5 +52,13 @@
             <aside class="col-md-3">右侧</aside>
         </div>
     </div>
+    <script>
+        function toggle() {
+            const logo = document.getElementById('logo')
+            let hid = (logo.style.visibility !== 'visible')
+            logo.style.visibility = (hid)? 'visible':'hidden'
+            logo.style.visibility = (hid)?'auto':'0px' 
+        }
+    </script>
 </body>
 </html>
