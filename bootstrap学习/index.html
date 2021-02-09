@@ -13,78 +13,42 @@
     <title>Vitaland Kids Cafe</title>
 </head>
 <body>
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-        <div class="row">
-            <header class="col-md-2">
-                <div class="logo">
-                    <a href="#">
-                        <img id="logo" src="images/bigLogo.png" alt="Vitaland">
-                    </a>
-                </div>
-                <div class="nav">
-                    <ul>
-                        <li ><a href="javascript:toggle()" class="glyphicon glyphicon-camera">生活馆</a></li>
-                        <li><a href="#" class="glyphicon glyphicon-picture">自然汇</a></li>
-                        <li><a href="#" class="glyphicon glyphicon-phone">科技潮</a></li>
-                        <li><a href="#" class="glyphicon glyphicon-gift">奇趣事</a></li>
-                        <li><a href="#" class="glyphicon glyphicon-glass">美食杰</a></li>
-                    </ul>
-                </div>
-            </header>
-            <article class="col-md-7">
-                <div class="news clearfix">
-                    <!-- 清除浮动 clearfix -->
-                    <ul>
-                        <li> 
-                        <a href="#">
-                            <img src="images/3221610325923_.pic_hd.jpg" alt="">
-                            <p>Kids Cafe</p>
-                        </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/3231610325924_.pic_hd.jpg" alt="">
-                                <p>Vitalands kdis cafe in Rhodes shopping centre dsjhdh</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/3281610325975_.pic_hd.jpg" alt="">
-                                <p>Vitalands kdis cafe in Rhodes shopping centre dsjhdh</p>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                            <img src="images/WeChat Image_20210208103812.jpg" alt="">
-                            <p>Vitalands kdis cafe in Rhodes shopping centre dsjhdh</p>
-                        </a>
-                        </li>
-                        <li><a href="#">
-                            <img src="images/WeChat Image_20210208103832.jpg" alt="">
-                            <p>Vitalands kdis cafe in Rhodes shopping centre dsjhdh</p>
-                        </a>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="publish">
-                    <div class="row">
-                        <div class="col-sm-9">
-                            <h3>生活馆 关于直接的十个健康知识你知道几个</h3>
-                        </div>
-                        <div class="col-sm-3">wewr</div>
-                    </div>
-                </div>
-            </article>
-            <aside class="col-md-3">右侧</aside>
-        </div>
+      <a class="navbar-brand" href="#">
+            <img src="images/bigLogo.png" alt="">
+          </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <script>
-        function toggle() {
-            const logo = document.getElementById('logo')
-            let hid = (logo.style.visibility !== 'visible')
-            logo.style.visibility = (hid)? 'visible':'hidden'
-            logo.style.visibility = (hid)?'auto':'0px' 
-        }
-    </script>
+  </nav>
+  
+  <!-- Page Content -->
+  <div class="container">
+    <h1 class="mt-4">Logo Nav by Start Bootstrap</h1>
+    <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML or with CSS. For best results, use an SVG image as your logo.</p>
+  </div>
+  <!-- /.container -->
+  
 </body>
 </html>
