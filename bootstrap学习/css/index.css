@@ -51,6 +51,43 @@ footer .cizgi { border-right: 1px solid #afb99b; }
 }
 
 .container-fluid {
-    background-image: url(http://image.lnstzy.cn/aoaodcom/2020-04/20/20200420120837da4b3512ef6f6f144ba6127229c21ea7.jpg.w1920.h1080.jpg?down);
+    /* background-image: url(http://image.lnstzy.cn/aoaodcom/2020-04/20/20200420120837da4b3512ef6f6f144ba6127229c21ea7.jpg.w1920.h1080.jpg?down); */
     background-repeat: no-repeat;
+    margin-top: 116px;
+}
+.nav-item {
+    margin-right: 12px;
+}
+
+.qrpic {
+    float:left;
+}
+.qrpic #qrpic {
+    margin-top: 20px!important;
+}
+a.weixin {
+	position: relative;
+}
+
+.weixin::after {
+	content: url(../images/qrcode.png);
+	position: absolute;
+	right: -28px;
+	top: -135px;
+	z-index: 99;
+	width: 120px;
+	height: 120px;
+	border: 5px solid #0095ba;
+	border-radius: 4px;
+	-webkit-transform-origin: top right;
+	transform-origin: top right;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	opacity: 0;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+.weixin:hover::after {
+	transform: scale(1);
+	opacity: 1;
 }
