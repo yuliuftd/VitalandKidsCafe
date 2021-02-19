@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/commonstyle.css">
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <title>Vitaland Kids Cafe</title>
 </head>
@@ -38,21 +40,21 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
+                        <a class="nav-link" href="index.html">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Visite</a>
+                        <a class="nav-link" href="visit.html">Visit</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cafe&Menu</a>
+                        <a class="nav-link" href="menu.html">Cafe&Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Party</a>
+                        <a class="nav-link" href="party.html">Party</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
+                        <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contacts.html">Contacts</a>
@@ -65,7 +67,8 @@
     <!-- Page Content -->
     <div id="article" class="container-fluid">
         <div class="row">
-            <div>Play and Fun</div>
+            <div class="text-center">Play and Fun</div>
+
         </div>
         <h1 class="mt-4">Logo Nav by Start Bootstrap</h1>
         <p>
@@ -134,8 +137,8 @@
             feature in Bootstrap 4! Make sure to set the width and
             height of the logo within the HTML or with CSS. For best results, use an SVG image as your logo.</p>
     </div>
-    <!-- /.container -->
 
+    <!-- footer -->
     <footer>
         <div class="jumbotron jumbotron-fluid bg-secondary p-4 mt-5 mb-0">
             <div class="container">
@@ -162,8 +165,9 @@
                                 </h5>
                                 <a class="text-light d-block lead" style="margin-left: -20px" href="#"><i
                                         class="fa fa-phone mr-2"></i>0436 292 626</a>
-                                <a class="text-light d-block lead" href="#"><i
-                                        class="fa fa-envelope mr-2"></i>admin@localhost.com</a>
+                                <a class="text-light d-block lead" href="#"><i class="fa fa-envelope mr-2"></i>Rain:
+                                    Vitalandkids@gmail.com
+                                </a>
                                 <a class="text-light d-block lead"
                                     href="https://www.google.com/maps/place/Vitaland+Kids+Cafe/@-33.8348117,151.0830516,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12a539952262e5:0x449f6b0a17a63c5b!8m2!3d-33.8348117!4d151.0852403"><i
                                         class="fa fa-map mr-2"></i>Shop26A Rhodes Waterside, 1 Rider Blvd, Rhodes
@@ -173,33 +177,42 @@
                     </div>
 
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="qrpic">
+
                         <div class="card bg-secondary border-0">
                             <div class="card-body text-center" style="padding-bottom: 0%;">
                                 <h5 class="card-title text-white display-4" style="font-size:30px;"><strong>Follow
                                         Us</strong></h5>
 
                                 <a class="text-light"
-                                    href="https://www.facebook.com/pages/category/Restaurant/vitaland_kids_cafe-104417804975632/" target="view_window"><i
-                                        class="fa fa-facebook-square fa-fw fa-2x"></i></a>
-                                <a class="text-light" href="https://www.instagram.com/vitaland_kids_cafe/" target="view_window"><i
-                                        class="fa fa-instagram fa-fw fa-2x"></i></a>
-                                <a class="text-light" href="javascript:void(0);" onclick="show()"><i class="fa fa-wechat fa-fw fa-2x"></i></a>
-                                <a class="text-light" href="https://www.xiaohongshu.com/user/profile/5c60b7e7000000001d038f2c" target="view_window"><i class="fa fa-book fa-fw fa-2x"></i></a>
+                                    href="https://www.facebook.com/pages/category/Restaurant/vitaland_kids_cafe-104417804975632/"
+                                    target="view_window"><i class="fa fa-facebook-square fa-fw fa-2x"></i></a>
+                                <a class="text-light" href="https://www.instagram.com/vitaland_kids_cafe/"
+                                    target="view_window"><i class="fa fa-instagram fa-fw fa-2x"></i></a>
+                                <a class="text-light-wechat"><i class="fa fa-wechat fa-fw fa-2x"></i></a>
+                                <a class="text-light"
+                                    href="https://www.xiaohongshu.com/user/profile/5c60b7e7000000001d038f2c"
+                                    target="view_window"><i class="fa fa-book fa-fw fa-2x"></i></a>
+                            </div>
+                            <div class="code_wrap">
+                                <ul class="code">
+                                    <li><img class="wechat" src="images/qrcode.png" alt="" width="100px" height="100px">
+                                    </li>
+                                </ul>
                             </div>
                             <div class="card-body text-center">
                                 <h5 class="card-title text-white display-4" style="font-size:30px"><strong>Trading
                                         Hours</strong></h5>
                                 <p class="card-title text-white display-4" style="font-size:18px">Mon-Sun...9am - 5pm
                                 </p>
-                            </div>  
+                            </div>
                         </div>
-                        </div>
-                        <div class="qrpic" style="margin-top: 46px;"><img id="qrcode" src="images/qrcode.png" alt="" width="120px" height="120px" style="visibility: hidden;"></div>
-                        
+
+
+
                     </div>
-                    
+
                 </div>
+
                 <div class="copyright">
                     <p class="text-center">Copyright © 2021 Vitaland Kids Cafe. All rights reserved</p>
                 </div>
@@ -209,12 +222,20 @@
 
     </footer>
     <script>
-        function show() {
-            const qrcode = document.getElementById('qrcode')
-            let hid = (qrcode.style.visibility !== 'visible')
-            qrcode.style.visibility = (hid)? 'visible':'hidden'
-            qrcode.style.visibility = (hid)?'auto':'0px' 
-        }
+        $(".text-light-wechat").hover(function () {
+            $(".wechat").fadeIn(500);
+            $(".code_wrap").css("z-index", 200);
+        }, function () {
+            $(".wechat").fadeOut(0);
+            $(".code_wrap").css("z-index", 50);
+        });
+        $(".wechat").hover(function () {
+            $(this).fadeIn(0);
+            $(".code_wrap").css("z-index", 200);
+        }, function () {
+            $(this).fadeOut(500);
+            $(".code_wrap").css("z-index", 50);
+        });
     </script>
 </body>
 
