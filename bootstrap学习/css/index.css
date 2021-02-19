@@ -24,6 +24,7 @@
 }
 
 footer a.text-light:hover { color: #f3dccc!important; text-decoration: none; }
+footer a.text-light-wechat:hover { color: #f3dccc!important; text-decoration: none; }
 footer .cizgi { border-right: 1px solid #afb99b; }
 @media (max-width: 992px) { footer .cizgi { border-right: none; } }
 
@@ -65,29 +66,7 @@ footer .cizgi { border-right: 1px solid #afb99b; }
 .qrpic #qrpic {
     margin-top: 20px!important;
 }
-a.weixin {
-	position: relative;
-}
 
-.weixin::after {
-	content: url(../images/qrcode.png);
-	position: absolute;
-	right: -28px;
-	top: -135px;
-	z-index: 99;
-	width: 120px;
-	height: 120px;
-	border: 5px solid #0095ba;
-	border-radius: 4px;
-	-webkit-transform-origin: top right;
-	transform-origin: top right;
-	-webkit-transform: scale(0);
-	transform: scale(0);
-	opacity: 0;
-	-webkit-transition: all .4s ease-in-out;
-	transition: all .4s ease-in-out;
-}
-.weixin:hover::after {
-	transform: scale(1);
-	opacity: 1;
+.text-light-wechat {
+    color: #f8f9fa !important;
 }
