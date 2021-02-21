@@ -69,6 +69,17 @@
         <div id="contacts">            
         <div style="width: 300px"><h1><p class="text-center text-white">Cafe & Menu</p></h1></div>
         </div>
+        <div class="container" style="padding-top: 20px; padding-left: 20px;padding-right: 20px;">
+            <div><h4><p style="text-align:center;font-family: 'Sriracha', cursive; background-color:#fcf9f4;">We offer a variety of food options for all the kids and parents. <br>Please have a look at our extended menu below. Please click below to view our latest menu offerings. </p></h4><br></div>
+            
+            <div class="col-md-12" style="text-align: center;">
+                <button class="btn btn-primary" style="font-family: 'Sriracha', cursive;" onclick="ExchangePic(1)">Menu1</button>
+                <button class="btn btn-primary" style="font-family: 'Sriracha', cursive;" onclick="ExchangePic(2)">Menu2</button>
+            </div><br><br>
+            <div>
+                <img class="img-fluid" src="images/Menu1.png" alt="Menu1">
+            </div>
+        </div>
     </div>
 
     <!-- footer -->
@@ -168,6 +179,12 @@
             $(this).fadeOut(500);
             $(".code_wrap").css("z-index", 50);
         });
+    </script>
+    <script>
+        function ExchangePic(i) {
+            const pic = document.querySelector('img.img-fluid');
+            pic.src = "images/Menu" + i + ".png";
+        }
     </script>
 </body>
 

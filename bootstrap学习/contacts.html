@@ -73,12 +73,35 @@
                 </h1>
             </div>
         </div>
-        <div class="row" style="margin-bottom: 130px;">
-            <a class="col-sm-12 col-md-4 infoboard" title="Email: <br>                 Vitalandkids@gmail.com" onmousemove="i=0; wave(i)"></a>
-            <a class="col-sm-12 col-md-4 infoboard" title="Telephone: 0436292626" onmousemove="i=1; wave(i)"></a>
+        <div class="row" style="margin-top:60px; margin-bottom: 60px; margin-left: 40px; margin-right: 40px;">
+            <a class="col-sm-12 col-md-4 infoboard" title="Email:           Vitalandkids@gmail.com" onmouseover="i=0;console.log(i); wave(i)"></a>
+            <a class="col-sm-12 col-md-4 infoboard" title="Telephone: 0436292626" onmouseover="i=1;console.log(i); wave(i)"></a>
             <a class="col-sm-12 col-md-4 infoboard"
                 title="Address: Shop26A Rhodes Waterside, 1 Rider Blvd, Rhodes NSW 2138"
-                onmousemove="i=2; wave(i)"></a>
+                onmouseover="i=2; console.log(i); wave(i)"></a>
+        </div>
+        <div class="row" style="display:-webkit-flex;justify-content:center; background-color:#fcf9f4;">
+            <div class="col-sm-12">
+                <form class="col-lg-12">
+                    <br><br>
+                    <th><h1 style="text-align:center;font-family: 'Sriracha', cursive;">Send Enqueries</h1></th>
+                    <br><p style="text-align:center;font-family: 'Sriracha', cursive;">Have some suggestions or just want to say hi? Contact us via email:</p>
+                    <div class="col-md-12">
+                    <input type="text" class="form-control" id="Name" placeholder="Your Name *" ><br>
+                    </div>
+                    <div class="col-md-12">                    
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email *"><br>
+                    </div>
+                    <div class="col-md-12">                    
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Messege"></textarea>
+                    </div>
+                    <br>
+                    <div style="text-align: center;">
+                        <button type="submit" class="btn btn-primary col-md-3 col-sm-2" style="font-family: 'Sriracha', cursive;">Send</button>
+                    </div>                
+                    <br><br>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -182,19 +205,18 @@
         });
     </script>
     <script>
-        function wave(i) {
-            
+        function wave(i) {            
             const aElem = document.querySelectorAll('a.infoboard')
+            const docStyle = aElem[i].style
             const boundingClientRect = aElem[i].getBoundingClientRect()
-            docStyle = aElem[i].style
-
+                        
             aElem[i].onmousemove = function (e) {
 
                 const x = e.clientX - boundingClientRect.left
                 const y = e.clientY - boundingClientRect.top
 
-                const xc = boundingClientRect.width / 2
-                const yc = boundingClientRect.height / 2
+                const xc = boundingClientRect.width / 3
+                const yc = boundingClientRect.height / 3
 
                 const dx = x - xc
                 const dy = y - yc
@@ -209,7 +231,7 @@
                 docStyle.setProperty('--ty', '0')
                 docStyle.setProperty('--rx', '0')
                 docStyle.setProperty('--ry', '0')
-
+                
             }
 
             aElem[i].onmousedown = function (e) {
@@ -218,13 +240,12 @@
 
             }
 
-            document.body.onmouseup = function (e) {
+            aElem[i].onmouseup = function (e) {
 
                 docStyle.setProperty('--tz', '-12px')
 
             }
-        }
-        
+        }        
     </script>
 </body>
 

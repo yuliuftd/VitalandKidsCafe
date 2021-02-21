@@ -48,6 +48,7 @@ footer .cizgi {
 
 .jumbotron {
     background-color: #96d6ed!important;
+    margin-top: 0!important;
 }
 
 .card {
@@ -105,8 +106,7 @@ footer .cizgi {
     display: inline-block;
     padding: 1.2em 2em;
     text-decoration: none;
-    text-align: center!important;
-    text-height: 60px!important;
+    text-align: center;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -118,12 +118,12 @@ footer .cizgi {
 .infoboard::before {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 20px;
-    bottom: 20px;
-    right: 20px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 5px;
     height: 120px;
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    background: linear-gradient(135deg, #c4d1cd, #96d6ed);
     border-radius: 4px;
     transition: box-shadow 0.5s ease, transform 0.2s ease;
     will-change: transform;
@@ -141,7 +141,117 @@ footer .cizgi {
     content: attr(title);
     transition: transform 0.2s ease;
     font-weight: bold;
-    letter-spacing: 0.01em;
+    font-size: large;
+    letter-spacing: 0.18em;
     will-change: transform;
     transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0));
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  height: 75%;
+  max-height: 600px;
+  perspective: 500px;
+  transform-style: preserve-3d;
+  transition: opacity 150ms ease-in-out;
+}
+.wrapper.loading {
+  opacity: 0;
+}
+
+.destination {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  text-shadow: 0 0 6px #00080e;
+  transition: all 150ms ease-out;
+}
+.destination h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+.destination hr {
+  height: 1px;
+  background-color: white;
+  border: none;
+  width: 50px;
+}
+.destination p {
+  font-size: 1.2em;
+}
+.destination button {
+  border: none;
+  background-color: #b71c1c;
+  font-family: inherit;
+  color: white;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  border-radius: 2em;
+  cursor: pointer;
+}
+.destination button:hover {
+  background-color: #d32f2f;
+}
+.destination img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+.destination::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 100ms ease-in;
+  mix-blend-mode: multiply;
+  opacity: 0;
+  pointer-events: none;
+}
+.destination.unfolded {
+  flex: 8 1;
+}
+.destination.unfolded.front {
+  transform: translateZ(20px);
+}
+.destination.unfolded.back {
+  transform: translateZ(-20px);
+}
+.destination.unfolded.back::after {
+  background: linear-gradient(to right, black 0%, white 25%, white 75%, black 100%);
+  opacity: 0.5;
+}
+.destination.folded {
+  flex: 1 8;
+}
+.destination.folded h1, .destination.folded hr, .destination.folded p, .destination.folded button {
+  display: none;
+}
+.destination.folded::after {
+  opacity: 0.6;
+}
+.destination.folded.right {
+  transform: rotateY(-30deg) scaleX(1.16);
+}
+.destination.folded.right::after {
+  background: linear-gradient(to left, white, black);
+}
+.destination.folded.left {
+  transform: rotateY(30deg) scaleX(1.16);
+}
+.destination.folded.left::after {
+  background: linear-gradient(to right, white, black);
 }
