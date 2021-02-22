@@ -17,6 +17,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Sriracha&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/commonstyle.css">
+
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/gallery-grid.css">
+    
+    <script src="js/baguetteBox.min.js"></script>
+
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <title>Vitaland Kids Cafe</title>
@@ -69,6 +75,69 @@
         <div id="contacts">            
         <div style="width: 150px"><h1><p class="text-center text-white">Gallery</p></h1></div>
         </div>
+        <div class="htmleaf-container">
+            <div class="container gallery-container">
+    
+                <h1>Vitaland Photo Gallery</h1>
+                
+                <p class="page-description text-center" style="font-family: 'Sriracha', cursive;">Enjoy your everyday</p>
+                
+                <div class="tz-gallery">
+    
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="images/Heng1.jpg">
+                                <img src="images/Heng1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="images/Heng2.jpg">
+                                <img src="images/Heng2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <a class="lightbox" href="images/Heng3.jpg">
+                                <img src="images/Heng3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="images/Heng4.jpg">
+                                <img src="images/Heng4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="images/Heng5.jpg">
+                                <img src="images/Heng5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="images/Heng6.jpg">
+                                <img src="images/Heng6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="images/Heng10.jpg">
+                                <img src="images/Heng10.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="images/Heng11.jpg">
+                                <img src="images/Heng11.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="images/Heng9.jpg">
+                                <img src="images/Heng9.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+                 
     </div>
 
     <!-- footer -->
@@ -168,6 +237,9 @@
             $(this).fadeOut(500);
             $(".code_wrap").css("z-index", 50);
         });
+    </script>
+    <script type="text/javascript">
+        baguetteBox.run('.tz-gallery');
     </script>
 </body>
 
