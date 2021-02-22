@@ -66,36 +66,7 @@
 
     <!-- Page Content -->
     <div id="article" class="container-fluid">
-        <div class="wrapper loading">
-            <div class="destination folded">
-                <h1>Iceland</h1>
-                <hr />
-                <p class="caption">Fire and ice</p>
-                <button>Discover</button><img src="https://source.unsplash.com/ABtmE3jhaPQ/800x600"
-                    alt="Beautiful Iceland" />
-            </div>
-            <div class="destination folded">
-                <h1>Canada</h1>
-                <hr />
-                <p class="caption">Genuine wilderness</p>
-                <button>Discover</button><img src="https://source.unsplash.com/DlkF4-dbCOU/800x600"
-                    alt="Beautiful Canada" />
-            </div>
-            <div class="destination folded">
-                <h1>Norway</h1>
-                <hr />
-                <p class="caption">Arctic gateway</p>
-                <button>Discover</button><img src="https://source.unsplash.com/6f_ANCcbj3o/800x600"
-                    alt="Beautiful Norway" />
-            </div>
-            <div class="destination folded">
-                <h1>Greenland</h1>
-                <hr />
-                <p class="caption">Epic landscapes</p>
-                <button>Discover</button><img src="https://source.unsplash.com/iWIDgeUbskQ/800x600"
-                    alt="Beautiful Greenland" />
-            </div>
-        </div>
+        
     </div>
 
     <!-- footer -->
@@ -181,22 +152,7 @@
         </div>
 
     </footer>
-    <script>
-        $(".text-light-wechat").hover(function () {
-            $(".wechat").fadeIn(500);
-            $(".code_wrap").css("z-index", 200);
-        }, function () {
-            $(".wechat").fadeOut(0);
-            $(".code_wrap").css("z-index", 50);
-        });
-        $(".wechat").hover(function () {
-            $(this).fadeIn(0);
-            $(".code_wrap").css("z-index", 200);
-        }, function () {
-            $(this).fadeOut(500);
-            $(".code_wrap").css("z-index", 50);
-        });
-    </script>
+    <script type="text/javascript" src="js/wechat_fade.js"></script>
 </body>
 
 </html>

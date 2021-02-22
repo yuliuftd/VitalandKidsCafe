@@ -1,25 +1,28 @@
 /* color:#769694,#afb99b,#c4d1cd,#f3dccc */
 
 .navbar {
-    background-color: #c4d1cd!important;
+    background-color: #96d6ed!important;
     font-size: 25px;
-    /* font-family: 'Cute Font', cursive; */
     font-family: 'Sriracha', cursive;
-    color: white;
-    /* padding-top: 1px;
-    padding-bottom: 1px; */
+    color: white!important;
 }
 
 .navbar-toggler .navbar-toggler-icon {
-    background-color: #769694;
+    background-color: #96d6ed;
+    color: #fff;
+    border: solid 1px;
+}
+.nav-link:hover {
+    color: #fff!important;
+
 }
 
 .navbar-left img {
     display: block;
     float: left;
-    width: 302px;
+    width: 282px;
     height: 100px;
-    padding: 0;
+    margin: 0;
 }
 
 .a {
@@ -47,7 +50,7 @@ footer .cizgi {
 }
 
 .jumbotron {
-    background-color: #c4d1cd!important;
+    background-color: #96d6ed!important;
     margin-top: 0!important;
 }
 

@@ -7,9 +7,8 @@ ul{
 	left:50%;
 	top:-235px;
 	margin-left: -450px;
-	width:900px;
-	z-index:50;
-	border: solid 1px;
+	width:560px;
+	z-index:-50;
 }
 .code{
 	width: 100%;
@@ -31,7 +30,7 @@ ul{
 	position:absolute;
 	left:348px;
 	border-radius: 4px;
-	border: 5px solid #96d6ed;
+	border: 5px solid #f3dccc;
 }
 
 @-webkit-keyframes stripe-slide {

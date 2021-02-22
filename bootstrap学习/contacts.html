@@ -9,7 +9,7 @@
       <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/baguetteBox.min.css">
     <link rel="stylesheet" href="css/gallery-grid.css">
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <title>Vitaland Kids Cafe</title>
 </head>
@@ -27,10 +28,7 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom shadow-md">
-        <div class="container">
-            <!-- <a class="navbar-left 1" href="index.html">
-                <img src="images/castle.png" alt="Castle">
-            </a> -->
+        <div class="container">            
             <a class="navbar-left" href="index.html">
 
                 <img src="images/smallLogo.png" alt="Vitaland Kids Cafe">
@@ -41,10 +39,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="visit.html">Visit</a>
@@ -190,22 +186,7 @@
         </div>
 
     </footer>
-    <script>
-        $(".text-light-wechat").hover(function () {
-            $(".wechat").fadeIn(500);
-            $(".code_wrap").css("z-index", 200);
-        }, function () {
-            $(".wechat").fadeOut(0);
-            $(".code_wrap").css("z-index", 50);
-        });
-        $(".wechat").hover(function () {
-            $(this).fadeIn(0);
-            $(".code_wrap").css("z-index", 200);
-        }, function () {
-            $(this).fadeOut(500);
-            $(".code_wrap").css("z-index", 50);
-        });
-    </script>
+    <script type="text/javascript" src="js/wechat_fade.js"></script>
     <script>
         function wave(i) {            
             const aElem = document.querySelectorAll('a.infoboard')
