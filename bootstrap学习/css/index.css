@@ -66,20 +66,12 @@ footer .cizgi {
     align-items: center;
 }
 
-
-/* .row {
-    background-image:url('images/bigLogo.png');
-    background-repeat: no-repeat;
-    background-position:top;
-} */
-
 .copyright {
     margin-top: 18px;
     margin-bottom: 0;
 }
 
 .container-fluid {
-    /* background-image: url(http://image.lnstzy.cn/aoaodcom/2020-04/20/20200420120837da4b3512ef6f6f144ba6127229c21ea7.jpg.w1920.h1080.jpg?down); */
     background-repeat: no-repeat;
     margin-top: 116px;
     padding: 0;

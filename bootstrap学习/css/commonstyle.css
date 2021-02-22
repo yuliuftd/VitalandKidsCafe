@@ -9,6 +9,7 @@ ul{
 	margin-left: -450px;
 	width:900px;
 	z-index:50;
+	border: solid 1px;
 }
 .code{
 	width: 100%;
