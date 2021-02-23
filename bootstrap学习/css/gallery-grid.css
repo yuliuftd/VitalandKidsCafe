@@ -5,6 +5,7 @@
     min-height: 100vh;
     border-radius: 20px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+    max-width: 1380px;
 }
 
 .gallery-container h1 {
