@@ -17,7 +17,6 @@
 }
 .nav-link:hover {
     color: #000!important;
-
 }
 
 .navbar-left img {
@@ -26,6 +25,22 @@
     width: auto;
     height: 100px;
     margin: 0;
+}
+@media(max-width:576px) {
+    .navbar-left img {
+        height: 58px;
+        width: auto;
+    }
+    .nav-link {
+        font-size: 16px;
+    }
+    #menupage-description p{
+        font-size: 18px;
+    }
+    #menupage-button .button{
+        padding:9px 24px 9px 24px;
+        margin-bottom: 5px;
+    }
 }
 
 .a {
@@ -53,7 +68,7 @@ footer .cizgi {
 }
 
 .jumbotron {
-    background-color: #96d6ed!important;
+    background-color: #c4d1cd!important;
     margin-top: 0!important;
 }
 
@@ -85,7 +100,7 @@ footer .cizgi {
 
 .container-fluid {
     background-repeat: no-repeat;
-    margin-top: 116px;
+    
     padding: 0;
 }
 

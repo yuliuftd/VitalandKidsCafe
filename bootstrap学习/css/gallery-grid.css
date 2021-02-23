@@ -8,6 +8,12 @@
     max-width: 1380px;
 }
 
+@media(max-width:576px) {
+    div .tz-gallery {
+        padding: 3px;
+    }
+}
+
 .gallery-container h1 {
     text-align: center;
     margin-top: 70px;
