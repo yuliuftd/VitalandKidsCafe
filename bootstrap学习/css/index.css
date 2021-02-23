@@ -1,26 +1,29 @@
 /* color:#769694,#afb99b,#c4d1cd,#f3dccc */
 
 .navbar {
-    background-color: #96d6ed!important;
+    background-color: #fff;
     font-size: 25px;
     font-family: 'Sriracha', cursive;
-    color: white!important;
+    
+}
+.nav-link {
+    color: #769694!important;
 }
 
 .navbar-toggler .navbar-toggler-icon {
-    background-color: #96d6ed;
+    background-color: #769694;
     color: #fff;
     border: solid 1px;
 }
 .nav-link:hover {
-    color: #fff!important;
+    color: #000!important;
 
 }
 
 .navbar-left img {
     display: block;
     float: left;
-    width: 282px;
+    width: auto;
     height: 100px;
     margin: 0;
 }
