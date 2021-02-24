@@ -3,7 +3,7 @@
 .navbar {
     background-color: #fff;
     font-size: 25px;
-    font-family: 'Sriracha', cursive;
+    font-family: Helvetica Neue;
     
 }
 .nav-link {
@@ -16,7 +16,7 @@
     border: solid 1px;
 }
 .nav-link:hover {
-    color: #000!important;
+    color: #c4d1cd!important;
 }
 
 .navbar-left img {
@@ -26,13 +26,18 @@
     height: 100px;
     margin: 0;
 }
+@media(min-width:1220px) {
+    .navbar-left img {
+        margin-right: 28px;
+    }
+}
 @media(max-width:576px) {
     .navbar-left img {
         height: 58px;
         width: auto;
     }
     .nav-link {
-        font-size: 16px;
+        font-size: 14px;
     }
     #menupage-description p{
         font-size: 18px;
@@ -52,6 +57,17 @@
         margin-bottom: 0px!important;
         display: block;
     }
+    .card {
+        margin: 4px 10px 0px 10px;
+        /* height: 50%; */
+        /* text-align: center; */
+    }
+    .card-img-top {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        height: 60%;
+    } 
 }
 
 .a {
@@ -86,6 +102,11 @@ footer .cizgi {
 .card {
     background-color: transparent!important;
 }
+#card-group .card {
+    /* margin-right: 5px; */
+
+} 
+
 
 #contacts {
     background-image: url(../images/3231610325924_.pic_hd.jpg);
