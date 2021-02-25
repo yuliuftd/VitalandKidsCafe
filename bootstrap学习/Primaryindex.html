@@ -1,74 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--[if lt IE 9]>
-      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-    <![endif]-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Sriracha&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/commonstyle.css">
-
-    <link rel="stylesheet" href="css/baguetteBox.min.css">
-    <link rel="stylesheet" href="css/gallery-grid.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/preload.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/castle.png">
-    <script src="js/baguetteBox.min.js"></script>
-
-    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    <title>Vitaland Kids Cafe</title>
+    <title>Vitaland Headquarter</title>
 </head>
-
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light border-bottom shadow-md">
-        <div class="container">
-            <!-- <a class="navbar-left 1" href="index.html">
-                <img src="images/castle.png" alt="Castle">
-            </a> -->
-            <a class="navbar-left" href="index.html">
-
-                <img src="images/newLogo.png" alt="Vitaland Kids Cafe">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="visit.html">Visit</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Cafe&Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="party.html">Party</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacts.html">Contacts</a>
-                    </li>
-                </ul>
+    <!-- preloader  -->
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                    <span data-text-preloader="V" class="letters-loading">
+                        V
+                    </span>
+                    <span data-text-preloader="I" class="letters-loading">
+                        I
+                    </span>
+                    <span data-text-preloader="T" class="letters-loading">
+                        T
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                    <span data-text-preloader="L" class="letters-loading">
+                        L
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                    <span data-text-preloader="N" class="letters-loading">
+                        N
+                    </span>
+                    <span data-text-preloader="D" class="letters-loading">
+                        D
+                    </span>
+                </div>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
+    <!-- preloader end -->
 
-    <!-- Page Content -->
+    <div class="container-fluid">
+        <div class="row col-12">
+            <div class="col-lg-6 col-sm-12"><input type="text" placeholder="search our branches"></div>
+            <div class="col-lg-3 col-sm-12"><i class="fa fa-map"></i></div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Action
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="article" class="container-fluid">
         <div id="carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -302,19 +314,12 @@
             </div>
 
         </div>
-
-    </footer>
-    <script type="text/javascript" src="js/wechat_fade.js"></script>
-    <script>
-        var myCarousel = document.querySelector('#myCarousel')
-        var carousel = new bootstrap.Carousel(myCarousel, {
-            interval: 2000,
-            wrap: true
-        })
-    </script>
-    <script>
-        baguetteBox.run('.tz-gallery');
-    </script>
+    <script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
