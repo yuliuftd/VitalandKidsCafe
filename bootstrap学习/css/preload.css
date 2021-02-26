@@ -2,9 +2,17 @@
   padding-left: 0;
   margin-bottom: 20px;
 }
+
+
+
+
 @media(max-width: 575px) {
   #index .navbar img {
     height: 24px;
+  }
+  #index .container {
+    padding-left: 4px!important;
+    padding-right: 4px!important;
   }
 }
 
@@ -27,8 +35,11 @@
   max-width: 1380px;
   padding-top: 20px;
   margin-top: 10px;
+  
 }
-
+.row {
+  margin: 0;
+}
 .ctn-preloader {
     -webkit-box-align: center;
     -ms-flex-align: center;
