@@ -2,6 +2,7 @@ function preloader() {
 	const parent = document.getElementById('preloader')
 	const child = document.getElementById('ctn-preloader')
 	parent.removeChild(child)
+	window.location.href = "home.html"
 }
 
 setInterval(() => {
