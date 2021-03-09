@@ -1,20 +1,13 @@
 /* color:#769694,#afb99b,#c4d1cd,#f3dccc */
-.container-fluid {
-    background-image: url(../images/bird.png);
-    /* background-image: url("https://lh3.googleusercontent.com/proxy/8JVDXDrxos5meHhhD0J-LdjZOfwqVvEUo-QGxNYLIDS7AADsTJEJd7mpMQxSttrHNxD7aJtAhghcpCZR9CkQVyLH_n8-eIBlT0Hz68Ss7qm79mr19ch2RbMfeR4rZd9ELbyM--g"); */
-    background-repeat: no-repeat;
-    background-size: 6%;
-    background-position: left;
-    background-attachment: fixed;
-}
-.container-fluid {
-    background-image: url(../images/tree.png);
-    background-size: 5%;
-    background-position: right middle;
-}
+/* body {
+    background-image: url(../images/playground3.png);
+    background-repeat: repeat;
+    background-size: cover;
+} */
+
 .navbar {
-    background-color: #ffffff;
-    font-size: 25px;
+    background-color: #ffffff!important;
+    font-size: 18px;
     font-family: Helvetica Neue;
 }
 .nav-link {
@@ -27,14 +20,17 @@
     border: solid 1px;
 }
 .nav-link:hover {
-    color: #c4d1cd!important;
+    background-color: #c4d1cd;
+}
+.nav-item .active {
+    font-size: 25px!important;
 }
 
 .navbar-left img {
     display: block;
     float: left;
     width: auto;
-    height: 70px;
+    height: 61px;
     margin: 10px, 0px;
 }
 @media(min-width:1220px) {
@@ -184,7 +180,7 @@ footer .cizgi {
     bottom: 0px;
     right: 5px;
     height: 120px;
-    background: linear-gradient(135deg, #c4d1cd, #96d6ed);
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
     border-radius: 4px;
     transition: box-shadow 0.5s ease, transform 0.2s ease;
     will-change: transform;

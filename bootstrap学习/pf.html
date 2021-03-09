@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ </head>
+ <body style="background-image:url('../bootstrap学习/images/playground3.png');background-size: cover;">
+  <div id="body" >
+     <!--漂浮图片 2017.5.24-->
+   <div id="float_AD" style="position:absolute;z-index:1000;" οnmοuseοver="window.clearInterval(timer)" οnmοuseοut="timer=window.setInterval('changePos()',delay);">
+    <a href="http://www.iterchina.cn/"><img src="https://img-blog.csdn.net/20170524093248122" style="width:300px; height:300px;" /></a>
+    <span style="CURSOR:hand;color:red;font-weight:bold" οnclick="clearInterval(timer);obj.style.visibility = 'hidden'">X</span>
+   </div>
+   <script type="text/javascript" language="JavaScript">
+   var obj=document.getElementById("float_AD");
+   var clientHeight=document.documentElement.clientHeight;
+   var clientWidth=document.documentElement.clientWidth;
+   var timer; var delay= 20;//移动速度
+   function randomNum(size){ return Math.floor(Math.random()*(size-160+1)); }
+   obj.style.top=randomNum(clientHeight)+"px";
+   obj.style.left=randomNum(clientWidth)+"px";
+   var y=parseInt(obj.style.top);
+   var x=parseInt(obj.style.left);
+   var flagX=false; var flagY=true;
+   function moveY(){ if(flagY){ y++; if(y>clientHeight-160){ flagY=false; } }else{ y--; if(y<0){ flagY=true; } } obj.style.top=y+"px"; }
+   function moveX(){ if(flagX){ x++; if(x>clientWidth-160){ flagX=false; } }else{ x--; if(x<0){ flagX=true; } } obj.style.left=x+"px"; }
+   window.οnresize=function(){ clientHeight=document.documentElement.clientHeight; clientWidth=document.documentElement.clientWidth; }
+   function changePos(){moveY();moveX(); }
+   function creatTimer(){timer = window.setInterval("changePos();",delay); }
+   function hide() {obj.style.display = "none";
+   obj.onmouseout = function() {obj.style.visibility = "hidden";}}
+   var url = window.location.href;if (true) {creatTimer();} else {hide();}// url == "http://www.xxxxx.cn/"
+   </script>
+
+ </body>
+</html>
