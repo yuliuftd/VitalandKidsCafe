@@ -163,7 +163,7 @@ footer .cizgi {
 .infoboard {
     position: relative;
     display: inline-block;
-    padding: 1.2em 2em;
+    padding: 1em 1em;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
@@ -180,9 +180,10 @@ footer .cizgi {
     top: 0px;
     left: 0px;
     bottom: 0px;
-    right: 5px;
+    right: 10px;
     height: 120px;
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    /* background: linear-gradient(135deg, #a8edea, #fed6e3); */
+    background: linear-gradient(135deg, #fed6e3, #a8edea);
     border-radius: 4px;
     transition: box-shadow 0.5s ease, transform 0.2s ease;
     will-change: transform;
@@ -257,6 +258,11 @@ footer .cizgi {
   transition: all 0.5s ease-in-out;
 }
 
+.carousel .carousel-item img{
+    height: 480px;
+    object-fit: cover;
+}
+
 @media(max-width:768px){
     .carousel-item img {
         height: 210px!important;
@@ -268,4 +274,84 @@ footer .cizgi {
         width: 100%;
         height: auto;
     }
+}
+
+* {
+    box-sizing: border-box;
+}
+.responsive {
+    padding: 0 50px;
+    float: left;
+    width: 33%;
+}
+.gallery:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+
+}
+@media only screen and (max-width: 768px) {
+    .responsive {
+        width: 49.99%;
+        margin: 6px 0;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .responsive {
+        width: 100%;
+    }
+}
+div.gallery img {
+    display: block;
+    height: 320px;
+    width: 100%;
+    /* width: 320px;
+    height: 320px;  */
+    margin-left: auto;
+    margin-right: auto; 
+    object-fit: contain;
+}
+div.desc {
+    font-family: 'Nunito', sans-serif;
+    color:#769694;
+    font-size: 32px;
+    text-align: center;
+    margin: 24px 0 7px 0;
+    padding: 7px;
+}
+div.desc-detail {
+    text-align: center;
+    padding: 0 10px;
+    color:#769694;
+}
+div.carousel {
+    font-family: 'Nunito', sans-serif;
+}
+div.carousel-caption h1{
+    text-align: left;
+    margin-top: 0px;
+    display: inline-block;
+    float:left;
+    font-size: 4em;
+    font-weight: bold;
+    color:white;
+    background-image: linear-gradient(to top, rgba(250, 157, 183, 0.253), rgba(250,157,183, 0.8));
+    border-radius: 10px;
+}
+
+div.carousel-caption h5{
+    float:left;
+    font-size: 2em;
+    text-align: left;
+    display: inline-block;
+    background-color: #f3dccc;
+    opacity: 0.9;
+    border-radius: 4px;
+}
+div.carousel-caption p{
+    display: inline-block;
+    float:left;
+    text-align: left;
+    color:#888;
+    background-color: white;
+    border-radius: 4px;
 }

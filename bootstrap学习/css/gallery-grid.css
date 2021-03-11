@@ -19,16 +19,28 @@
 .gallery-container h1 {
     text-align: center;
     margin-top: 0px;
-    font-family: 'Droid Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: bold;
+    color: #769694;
+    background-image: none;
+    transition: background-image 2s;
 }
-
-.gallery-container p.page-description {
+.gallery-container h1 {
+    background-image: linear-gradient(to top, rgba(250,157,183, 0.5), rgba(250,157,183, 0.5));
+}
+.gallery-container h2 {
     text-align: center;
-    max-width: 800px;
-    margin: 25px auto;
+    margin: 0 0 24px 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color: #769694;
+}
+.gallery-container h4.page-description {
+    text-align: left;
+    margin: auto;
     color: #888;
-    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
 }
 
 .tz-gallery {
