@@ -113,10 +113,12 @@ div[id^="list-around"] {
     width: 0;
     height: 100%;
     transition: .5s ease;
-    opacity: 0.8;
+    opacity: 0.9;
+    border-radius: 10px;
 }
 div[id^="list-around"]:hover {
     box-shadow: 0 0 6px rgb(35 173 255);
+    border-radius: 10px;
 }
 div[id^="list-around"]:hover .overlay {
     width: 100%;
