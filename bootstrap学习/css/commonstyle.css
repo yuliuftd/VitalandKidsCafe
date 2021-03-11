@@ -63,7 +63,7 @@ ul{
 	cursor: pointer;
 	-moz-user-select: text;	
 	text-decoration: none;
-	text-transform: uppercase;
+	text-transform: none;
 	padding: 16px 36px 22px;
 	background-color: #f3dccc;
 	color: #666;

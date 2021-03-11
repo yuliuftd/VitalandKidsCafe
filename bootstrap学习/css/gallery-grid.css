@@ -35,12 +35,21 @@
     font-weight: bold;
     color: #769694;
 }
-.gallery-container h4.page-description {
-    text-align: left;
-    margin: auto;
-    color: #888;
+.gallery-container h4 {
     font-family: 'Nunito', sans-serif;
-    font-size: 22px;
+    position: absolute;
+    color: #769694;
+    bottom: 10px!important;
+    left: 0!important;
+    right: 0!important;
+    margin-bottom: 0px!important;
+}
+.gallery-container p {
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tz-gallery {
@@ -67,7 +76,76 @@
 .baguetteBox-button {
     background-color: transparent !important;
 }
-
+#circle-around .banner {
+    width: 100%;
+    height: 42px;
+}
+#circle-around .banner:first-child {
+    background-image: url('../images/8kids.png');
+    background-size: contain, 1450px 10px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+#circle-around .banner:last-child {
+    height: 10px;
+    background-image: url('../images/fengexian.png');
+    background-size: contain;
+    margin-top: 20px;
+}
+div[id^="list-around"] {
+    background-image: url('../images/balloon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:bottom;
+    width: 100%;
+    height: 130px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 4px;
+}
+.overlay {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: #c4d1cd;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    opacity: 0.8;
+}
+div[id^="list-around"]:hover {
+    box-shadow: 0 0 6px rgb(35 173 255);
+}
+div[id^="list-around"]:hover .overlay {
+    width: 100%;
+}
+.overlay-text {
+    /* white-space: nowrap; */
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.gallery-container div[id^="list-around"] h4{
+    position: absolute;
+    color: #769694;
+    bottom: 10px!important;
+    left: 0!important;
+    right: 0!important;
+    margin-bottom: 0px!important;
+}
+.kids8 {
+    transition: transform 2s;
+}
+.kids8:hover {
+    transform: rotate(360deg);
+}
 
 @media(max-width: 768px) {
     body {
